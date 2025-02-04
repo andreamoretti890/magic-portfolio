@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Andrea",
+  lastName: "Moretti",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Software Engineer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/Rome", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Italian"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -29,22 +29,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/andreamoretti890/",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://www.linkedin.com/andreamoretti890/",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:andrea.moretti890@gmail.com",
   },
 ];
 
@@ -55,7 +50,7 @@ const home = {
   headline: <>Design engineer and builder</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
+      I'm Andrea, a software developer at <InlineCode>Hyperware Solutions</InlineCode>, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -92,9 +87,9 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Hyperware Solutions",
+        timeframe: "2021 - Present",
+        role: "Software Developer",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -115,22 +110,22 @@ const about = {
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+      // {
+      //   company: "Creativ3",
+      //   timeframe: "2018 - 2022",
+      //   role: "Lead Designer",
+      //   achievements: [
+      //     <>
+      //       Developed a design system that unified the brand across multiple platforms, improving
+      //       design consistency by 40%.
+      //     </>,
+      //     <>
+      //       Led a cross-functional team to launch a new product line, contributing to a 15% increase
+      //       in overall company revenue.
+      //     </>,
+      //   ],
+      //   images: [],
+      // },
     ],
   },
   studies: {
