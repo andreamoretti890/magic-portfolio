@@ -34,7 +34,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/andreamoretti890/",
+    link: "https://www.linkedin.com/in/andreamoretti890/",
   },
   {
     name: "Email",
@@ -76,9 +76,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Andrea is a software developer proficient in Swift, .NET MAUI, C# and X++, he has developed 
+        cross-platform mobile apps for iOS and Android and contributed to back-end API solutions.
+        He has also streamlined enterprise-level data management in D365 F&O, designing features to
+        enhance efficiency and reduce errors. With a strong foundation in performance optimization
+        and a growing passion for iOS development.
       </>
     ),
   },
@@ -88,44 +90,38 @@ const about = {
     experiences: [
       {
         company: "Hyperware Solutions",
-        timeframe: "2021 - Present",
+        timeframe: "2020 - Present",
         role: "Software Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed a web application using Blazor and a cross-platform mobile app with .NET MAUI for iOS and Android.
+            Contributed to back-end API development using C#, integrating the RepoDB ORM library to efficiently execute
+            SQL queries
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Implemented a centralized solution to manage cross-company product master data (DBA) in D365 F&O. Developed
+            features such as a BOM Master structure, cross-company Engineering Change Requests (ECRs), and Engineering
+            Change Orders (ECOs) to streamline the maintenance and synchronization of product data across multiple
+            companies, reducing redundancy and minimizing the risk of errors during data entry and updates.
+          </>,
+          <>
+            Conducted performance analysis of import end export interfaces in D365 F&O, utilizing Trace Parser to identify
+            and optimize inefficient queries.
+          </>,
+          <>
+            Developed and helped design the company's website.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
-      // {
-      //   company: "Creativ3",
-      //   timeframe: "2018 - 2022",
-      //   role: "Lead Designer",
-      //   achievements: [
-      //     <>
-      //       Developed a design system that unified the brand across multiple platforms, improving
-      //       design consistency by 40%.
-      //     </>,
-      //     <>
-      //       Led a cross-functional team to launch a new product line, contributing to a 15% increase
-      //       in overall company revenue.
-      //     </>,
-      //   ],
-      //   images: [],
-      // },
     ],
   },
   studies: {
@@ -133,13 +129,13 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: 'I.T.T. Vittorio Veneto "Città della Vittoria"',
+        description: <>Studied information technology.</>,
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+      // {
+      //   name: "Build the Future",
+      //   description: <>Studied online marketing and personal branding.</>,
+      // },
     ],
   },
   technical: {
