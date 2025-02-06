@@ -1,5 +1,6 @@
 import {
   Avatar,
+  Badge,
   Button,
   Column,
   Flex,
@@ -174,7 +175,8 @@ export default function About() {
               {person.role}
             </Text>
             {social.length > 0 && (
-              <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth>
+              <Flex vertical="center" className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth>
+                <Button href="" size="m">Download CV</Button>
                 {social.map(
                   (item) =>
                     item.link && (
@@ -198,7 +200,7 @@ export default function About() {
                         />
                       </>
                     ),
-                )}
+                  )}
               </Flex>
             )}
           </Column>
@@ -302,40 +304,45 @@ export default function About() {
                 {about.technical.title}
               </Heading>
               <Column fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
-                    </Text>
-                    {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
-                          >
-                            <SmartImage
-                              enlarge
-                              radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
-                      </Flex>
-                    )}
-                  </Column>
-                ))}
+                <Flex wrap gap="8">
+                  {about.technical.skills.map((skill, index) => (
+                    <Badge icon={skill.icon}>
+                      {skill.title}
+                    </Badge>
+                    // <Column key={`${skill}-${index}`} fillWidth gap="4">
+                    //   <Text variant="heading-strong-l">{skill.title}</Text>
+                    //   <Text variant="body-default-m" onBackground="neutral-weak">
+                    //     {skill.description}
+                    //   </Text>
+                    //   {skill.images && skill.images.length > 0 && (
+                    //     <Flex fillWidth paddingTop="m" gap="12" wrap>
+                    //       {skill.images.map((image, index) => (
+                    //         <Flex
+                    //           key={index}
+                    //           border="neutral-medium"
+                    //           radius="m"
+                    //           //@ts-ignore
+                    //           minWidth={image.width}
+                    //           //@ts-ignore
+                    //           height={image.height}
+                    //         >
+                    //           <SmartImage
+                    //             enlarge
+                    //             radius="m"
+                    //             //@ts-ignore
+                    //             sizes={image.width.toString()}
+                    //             //@ts-ignore
+                    //             alt={image.alt}
+                    //             //@ts-ignore
+                    //             src={image.src}
+                    //           />
+                    //         </Flex>
+                    //       ))}
+                    //     </Flex>
+                    //   )}
+                    // </Column>
+                  ))}
+                </Flex>
               </Column>
             </>
           )}

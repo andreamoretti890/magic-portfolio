@@ -9,7 +9,7 @@ const person = {
   role: "Software Engineer",
   avatar: "/images/avatar.jpg",
   location: "Europe/Rome", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Italian"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["Italian", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -27,11 +27,6 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/andreamoretti890/",
-  },
-  {
     name: "LinkedIn",
     icon: "linkedin",
     link: "https://www.linkedin.com/in/andreamoretti890/",
@@ -41,13 +36,18 @@ const social = [
     icon: "email",
     link: "mailto:andrea.moretti890@gmail.com",
   },
+  {
+    name: "GitHub",
+    icon: "github",
+    link: "https://github.com/andreamoretti890/",
+  },
 ];
 
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Software developer and builder</>,
   subline: (
     <>
       I'm Andrea, a software developer at <InlineCode>Hyperware Solutions</InlineCode>, where I craft intuitive
@@ -96,10 +96,10 @@ const about = {
           <>
             Developed a web application using Blazor and a cross-platform mobile app with .NET MAUI for iOS and Android.
             Contributed to back-end API development using C#, integrating the RepoDB ORM library to efficiently execute
-            SQL queries
+            SQL queries.
           </>,
           <>
-            Implemented a centralized solution to manage cross-company product master data (DBA) in D365 F&O. Developed
+            Implemented a centralized solution to manage cross-company product master data (DBA) in Microsoft Dynamics 365 F&O. Developed
             features such as a BOM Master structure, cross-company Engineering Change Requests (ECRs), and Engineering
             Change Orders (ECOs) to streamline the maintenance and synchronization of product data across multiple
             companies, reducing redundancy and minimizing the risk of errors during data entry and updates.
@@ -143,37 +143,34 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Swift / SwiftUI",
+        icon: "swift"
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: ".NET MAUI",
       },
+      {
+        title: "C#",
+      },
+      {
+        title: "Blazor",
+      },
+      {
+        title: "Microsoft D365",
+      },
+      // {
+      //   title: "Next.js",
+      //   description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+      //   // optional: leave the array empty if you don't want to display images
+      //   images: [
+      //     {
+      //       src: "/images/projects/project-01/cover-04.jpg",
+      //       alt: "Project image",
+      //       width: 16,
+      //       height: 9,
+      //     },
+      //   ],
+      // },
     ],
   },
 };

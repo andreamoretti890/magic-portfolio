@@ -15,7 +15,7 @@ import {
   HiInformationCircle,
   HiExclamationCircle,
   HiCheckCircle,
-  HiMiniGlobeAsiaAustralia,
+  HiMiniGlobeEuropeAfrica,
   HiArrowTopRightOnSquare,
   HiEnvelope,
   HiCalendarDays,
@@ -31,7 +31,9 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaLinkedin, FaSwift } from "react-icons/fa6";
+
+import { SiBlazor } from "react-icons/si";
 
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
@@ -48,7 +50,7 @@ export const iconLibrary: Record<string, IconType> = {
   errorCircle: HiExclamationCircle,
   checkCircle: HiCheckCircle,
   email: HiEnvelope,
-  globe: HiMiniGlobeAsiaAustralia,
+  globe: HiMiniGlobeEuropeAfrica,
   person: PiUserCircleDuotone,
   grid: PiGridFourDuotone,
   book: PiBookBookmarkDuotone,
@@ -60,7 +62,8 @@ export const iconLibrary: Record<string, IconType> = {
   discord: FaDiscord,
   github: FaGithub,
   linkedin: FaLinkedin,
-  x: FaXTwitter,
+  swift: FaSwift,
+  blazor: SiBlazor,
   clipboard: HiClipboard,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
 };
